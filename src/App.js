@@ -23,7 +23,7 @@ function App(){
   useEffect(()=>{
       const fetchWeather = async () => {
         try{
-          const reqURL= `${api.base}weather?q=Ho%20Chi%20Minh&units=metric&APPID=${api.key}`;
+          const reqURL= `${api.base}weather?q=ho%20chi%20minh&units=metric&APPID=${api.key}`;
           var res = await fetch(reqURL);
           var resJson = await res.json();
           setWeather(resJson);
